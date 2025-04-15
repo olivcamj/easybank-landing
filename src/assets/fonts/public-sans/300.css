@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/npm/@fontsource/public-sans/files/public-sans-latin-300-normal.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/npm/@fontsource/public-sans/files/public-sans-latin-300-normal.woff') format('woff');
+}
