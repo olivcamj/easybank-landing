@@ -48,16 +48,17 @@ const ArticleList = () => {
             image: 'image-confetti.jpg',
         },
     ]
+
     return (
         <section className="h-[1871px] bg-[#fafafa] p-5 pt-20 md:h-3/4 md:pb-14 lg:h-10/12">
             <h2 className="lg:ml- mb-5 text-center font-sans text-[32px] font-light text-[#2D314D] md:mb-8 lg:text-left">
                 Latest Articles
             </h2>
             <div className="grid-col m-auto grid content-center justify-center gap-6 md:h-auto md:w-full md:grid-cols-2 lg:flex lg:gap-3 xl:max-w-[1110px]">
-                {articles.map((item, index) => {
+                {articles.map((item: ArticleData, index: number) => {
                     return (
                         <Article
-                            key={index}
+                            key={item.title + index}
                             author={item.author}
                             title={item.title}
                             description={item.description}
