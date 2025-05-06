@@ -4,8 +4,13 @@ const config: Config = {
     theme: {
         extend: {
             fontFamily: {
-                mono: ['var(--montserrat-font)'],
-                sans: ['var(--inter-font)'],
+                sans: ['"Public Sans"', 'sans-serif'],
+            },
+            fontSize: {
+                '15px': ['15px', { lineHeight: '26px' }],
+            },
+            letterSpacing: {
+                tightest: '-0.23px',
             },
             colors: {
                 primary: {
