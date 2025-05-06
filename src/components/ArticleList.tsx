@@ -42,7 +42,7 @@ const ArticleList = () => {
         },
     ]
     return (
-        <section className="h-[1871px] bg-[#fafafa] p-5 pt-20 md:h-3/4 md:pb-14 lg:h-10/12 ">
+        <section className="h-[1871px] bg-[#fafafa] p-5 pt-20 md:h-3/4 md:pb-14 lg:h-10/12">
             <h2 className="lg:ml- mb-5 text-center font-sans text-[32px] font-light text-[#2D314D] md:mb-8 lg:text-left">
                 Latest Articles
             </h2>
@@ -54,7 +54,7 @@ const ArticleList = () => {
                             author={item.author}
                             title={item.title}
                             description={item.description}
-                            image={imageMap[item.image]}
+                            image={imageMap[item.image] ?? ''}
                         />
                     )
                 })}
