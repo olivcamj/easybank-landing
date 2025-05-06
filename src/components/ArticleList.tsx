@@ -11,7 +11,14 @@ const ArticleList = () => {
         'image-plane.jpg': plane,
         'image-confetti.jpg': confetti,
     }
-    const articles = [
+    interface ArticleData {
+        author: string
+        title: string
+        description: string
+        image: string
+    }
+
+    const articles: ArticleData[] = [
         {
             author: 'Claire Robinson',
             title: 'Receive money in any currency with no fees',
