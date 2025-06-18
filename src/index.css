@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss/preflight';
 @tailwind utilities;
+@config "../tailwind.config.ts";
 
 :root {
     --primary: #242424;
     --secondary: rgba(255, 255, 255, 0.87);
-    --font-inter: 'Inter', sans-serif;
-    --font-dmsans: 'DM Sans', sans-serif;
+    --accent: #2d314d;
+    --light-gray: #f4f5f7;
+    --highlight: #30c88f;
+    --btn: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
     --navbar-height: 80px;
-    font-family: var(--font-dmsans);
-    line-height: 1.5;
-    font-weight: 400;
-    color: var(--secondary);
-    background-color: var(--primary);
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* @utility bgMobile {
+
+} */
+
+body {
+    font-family: font-sans;
+    /* color: var(--secondary); */
+    /* background-color: var(--primary); */
 }
