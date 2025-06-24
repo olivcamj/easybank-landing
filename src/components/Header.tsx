@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from './Button'
 import Logo from '../assets/images/logo.svg'
 import { TfiClose } from 'react-icons/tfi'
 import { VscMenu } from 'react-icons/vsc'
@@ -17,7 +18,7 @@ const Header = () => {
     const toggleMenu = () => setIsOpen(!isOpen)
 
     return (
-        <header className="absolute top-0 right-0 z-12 flex h-[64px] w-full items-center justify-between bg-[#fff] px-[20px] md:justify-start md:gap-10 md:px-[55px]">
+        <header className="absolute top-0 right-0 z-12 flex h-[64px] w-full items-center justify-between bg-[#fff] px-[20px] md:gap-10 md:px-[55px]">
             <img src={Logo} alt="Easybank" />
             <div
                 onClick={toggleMenu}
@@ -46,6 +47,17 @@ const Header = () => {
                     })}
                 </nav>
             )}
+
+            <nav className="hidden gap-6 md:flex">
+                {navLinks.map((item) => (
+                    <a key={item.href} href={item.href}>
+                        {item.label}{' '}
+                    </a>
+                ))}
+            </nav>
+            <div className="m-0 hidden md:flex">
+                <Button />
+            </div>
         </header>
     )
 }
