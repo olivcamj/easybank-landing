@@ -8,7 +8,7 @@ import Button from './Button'
 
 const Footer = () => {
     return (
-        <footer className="grid place-items-center bg-(--accent) grid-cols-3">
+        <footer className="grid md:grid-cols-3 place-items-center bg-(--accent) ">
             <div>
                 <img src={Logo} alt="Easybank" className="h-8" />
                 <section className="m-4 flex h-auto w-[188px] cursor-pointer gap-1.5 p-2 md:m-0 md:mt-[35px] md:w-[154px]">
@@ -23,7 +23,7 @@ const Footer = () => {
                         <img
                             src={Facebook}
                             alt=""
-                            className="group-hover:text-(--highlightdd)"
+                            className="group-hover:text-(--highlight)"
                         />
                     </a>
                     <a
@@ -64,8 +64,8 @@ const Footer = () => {
                     </a>
                 </section>
             </div>
-            <nav className="tracking-tightest grid cursor-pointer gap-2 text-center font-normal group-hover:text-(--highlight) md:grid-cols-2 md:text-left">
-                <ul>
+            <nav className="tracking-tightest cursor-pointer gap-2 text-center font-normal group-hover:text-(--highlight) md:text-left text-white">
+                <ul className="tracking-tightest grid md:grid-cols-2">
                     <li className="max-w-[80] hover:text-(--highlight)">
                         About Us
                     </li>
@@ -75,11 +75,6 @@ const Footer = () => {
                     <li className="max-w-[80] hover:text-(--highlight)">
                         Blog
                     </li>
-                    {/* </ul> */}
-                    {/* TODO Should I be seperating these to columns using CSS , because it feels like 
-                    I should be honestly.             
-            */}
-                    {/* <ul> */}
                     <li className="max-w-[80] hover:text-(--highlight)">
                         Careers
                     </li>
