@@ -155,7 +155,7 @@ const Footer = () => {
                 </section>
             </div>
             <nav className="cursor-pointer text-center font-normal text-white group-hover:text-(--highlight) md:text-left">
-                <ul className="tracking-tightest grid gap-3 md:grid-cols-2">
+                <ul className="tracking-tighter grid gap-3 md:grid-cols-2">
                     <li className="hover:text-(--highlight)">About Us</li>
                     <li className="hover:text-(--highlight)">Contact</li>
                     <li className="hover:text-(--highlight)">Blog</li>
@@ -166,7 +166,7 @@ const Footer = () => {
             </nav>
             <div className="flex flex-col place-items-center items-center gap-4 md:place-items-end md:gap-7">
                 <Button />
-                <p className="tracking-tightest text-DEFAULT text-center text-[15px] font-normal text-gray-400">
+                <p className="tracking-tighter text-DEFAULT text-center text-[15px] font-normal text-gray-400">
                     © Easybank. All Rights Reserved
                 </p>
             </div>
