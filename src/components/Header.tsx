@@ -33,7 +33,7 @@ const Header = () => {
             </div>
 
             {isOpen && (
-                <nav className="absolute inset-10 top-44 z-12 m-auto flex h-[260px] w-80 flex-col items-center justify-center gap-[1em] rounded-[4px] border-transparent bg-[#fff] p-[30px] text-center md:hidden">
+                <nav className="absolute inset-0 top-55 m-auto flex h-[260px] w-11/12 flex-col items-center justify-center gap-[1em] rounded-sm border-transparent bg-[#fff] p-[30px] text-center shadow-[0_131px_90px_100px_rgba(45,49,77,0.5)] md:hidden">
                     {navLinks.map((item) => {
                         return (
                             <a
