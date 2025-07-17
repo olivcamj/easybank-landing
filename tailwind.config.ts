@@ -13,11 +13,6 @@ const config: Config = {
                 tightest: '-0.71px',
                 tighter: '-0.23px',
             },
-            backgroundImage: {
-                mobile: "url('/images/hero-mobile.svg')",
-                desktop: "url('/images/hero-desktop.svg')",
-                front: "url('/images/image-mockups.png')",
-            },
             // colors: {
             //     primary: {
             //         DEFAULT: 'var(--primary)',
