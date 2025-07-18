@@ -24,7 +24,7 @@ const Article: React.FC<ArticleProps> = ({
                 <p className="mb-2 font-sans text-[10px]/[18px] tracking-[-0.16px] text-[#9597a5]">
                     By {author}
                 </p>
-                <h3 className="mb-2 h-[40px] w-[265px] cursor-pointer text-[16px]/[20px] font-light tracking-[-0.29px] text-[#2d314d] hover:bg-[#30c88f] md:h-[72px] md:w-[207px]">
+                <h3 className="mb-2 h-[40px] w-[265px] cursor-pointer text-[16px]/[20px] font-light tracking-[-0.29px] text-[#2d314d] hover:text-[#30c88f] md:h-[72px] md:w-[207px]">
                     {title}
                 </h3>
                 <p className="h-[72px] font-sans text-[13px]/[18px] font-normal tracking-[-0.2] text-[#9597a5]">
